@@ -1,6 +1,5 @@
 # Locadora
-API RESTful para consulta e manutenção da lista de indicados e vencedores da categoria Pior Filme do Golden Raspberry Awards.
-A API foi criada visando atender ao nível de maturidade 2 de Richardson.
+API RESTful manutenção de clientes e carros, além dos serviços de locação e reserva, de uma locadora de carros.
 
 ## Requisitos
 Para execução do projeto, é necessário instalação do JDK 8.
@@ -41,3 +40,5 @@ Para ver a lista de chamadas REST disponíveis, seus parametros, códigos de res
 
 ## Testes
 Para executar os testes abra a classe AppTest.java, clique em Run -> Run As -> JUnit Test. Isso fará com que todos os testes de integração implementados sejam executados.
+
+O arquivo 'API Locadora.postman_collection.json' foi disponibilizado para ser importado no Postman. Ele contém as principais chamadas REST desenvolvidas para esta API.
