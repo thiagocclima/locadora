@@ -1,0 +1,734 @@
+{
+	"info": {
+		"_postman_id": "e573f662-fda8-46bb-82f3-92992ce7ca10",
+		"name": "API Locadora",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/locadora/cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/cliente/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/cliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"cliente",
+								"1"
+							]
+						},
+						"description": "Obter carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro/{id}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro",
+										"{id}"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/cliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"cpfCnpj\": \"0543343434\",\r\n\t\"nome\": \"Jão de Fe\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"cliente"
+							]
+						},
+						"description": "Salvar novo carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/cliente/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": \"1\",\r\n\t\"cpfCnpj\": \"03516856481\",\r\n\t\"nome\": \"João de Sousa\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/cliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"cliente",
+								"1"
+							]
+						},
+						"description": "Salvar alteração no carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro/{id}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro",
+										"{id}"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/cliente/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/cliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"cliente",
+								"1"
+							]
+						},
+						"description": "Remover carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro/{id}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro",
+										"{id}"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Carro",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/locadora/carro/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/carro/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"carro",
+								"1"
+							]
+						},
+						"description": "Obter carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro/{id}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro",
+										"{id}"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/carro",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"placa\": \"QQQ3544\",\r\n\t\"modelo\": \"Palio 1.0 98\",\r\n\t\"valorDiaria\": \"100.0\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/carro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"carro"
+							]
+						},
+						"description": "Salvar novo carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/carro/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"placa\": \"QQQ4484\",\n    \"modelo\": \"Palio 1.0 2014\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/carro/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"carro",
+								"2"
+							]
+						},
+						"description": "Salvar alteração no carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro/{id}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro",
+										"{id}"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/carro/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/carro/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"carro",
+								"1"
+							]
+						},
+						"description": "Remover carro"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/locadora/carro/{id}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"locadora",
+										"carro",
+										"{id}"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/carro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/carro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"carro"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reserva",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/locadora/reserva",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"dataInicio\":\"11/11/2018\",\n\t\"dataFim\":\"015/11/2018\",\n\t\"cliente\": {\n\t\t\"id\":\"2\"\n\t},\n\t\"carro\": {\n\t\t\"id\":\"1\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/reserva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/reserva/cancelar/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"dataInicio\": \"11/11/2018\",\n    \"dataFim\": \"15/11/2018\",\n    \"cliente\": {\n        \"id\": 2,\n        \"cpfCnpj\": null,\n        \"nome\": null\n    },\n    \"carro\": {\n        \"id\": 1,\n        \"placa\": null,\n        \"modelo\": null,\n        \"valorDiaria\": null\n    },\n    \"cancelada\": false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/reserva/cancelar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"reserva",
+								"cancelar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aluguel",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/locadora/aluguel/reserva",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"dataInicio\": \"11/11/2018\",\n    \"dataFim\": \"15/11/2018\",\n    \"cliente\": {\n        \"id\": 2,\n        \"cpfCnpj\": null,\n        \"nome\": null\n    },\n    \"carro\": {\n        \"id\": 1,\n        \"placa\": null,\n        \"modelo\": null,\n        \"valorDiaria\": null\n    },\n    \"cancelada\": false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/aluguel/reserva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"aluguel",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/aluguel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"dataInicio\": \"11/11/2018\",\n    \"dataFim\": \"15/11/2018\",\n    \"cliente\": {\n        \"id\": 2,\n        \"cpfCnpj\": null,\n        \"nome\": null\n    },\n    \"carro\": {\n        \"id\": 1,\n        \"placa\": null,\n        \"modelo\": null,\n        \"valorDiaria\": null\n    },\n    \"cancelada\": false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/aluguel/reserva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"aluguel",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/locadora/aluguel/devolver/3",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"dataInicio\": \"11/11/2018\",\n    \"dataFim\": \"15/11/2018\",\n    \"cliente\": {\n        \"id\": 2,\n        \"cpfCnpj\": null,\n        \"nome\": null\n    },\n    \"carro\": {\n        \"id\": 1,\n        \"placa\": null,\n        \"modelo\": null,\n        \"valorDiaria\": null\n    },\n    \"valor\": null,\n    \"reserva\": {\n        \"id\": 1,\n        \"dataInicio\": \"11/11/2018\",\n        \"dataFim\": \"15/11/2018\",\n        \"cliente\": {\n            \"id\": 2,\n            \"cpfCnpj\": null,\n            \"nome\": null\n        },\n        \"carro\": {\n            \"id\": 1,\n            \"placa\": null,\n            \"modelo\": null,\n            \"valorDiaria\": null\n        },\n        \"cancelada\": false\n    },\n    \"devolvido\": false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/locadora/aluguel/devolver/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locadora",
+								"aluguel",
+								"devolver",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
